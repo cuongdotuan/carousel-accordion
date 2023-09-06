@@ -25,6 +25,7 @@ const Carousel = () => {
     const [selectedIndex, setSelectedIndex] = useState(0)
 
     const onNext = () => {
+        console.log(selectedIndex)
         if (selectedIndex === data.length - 1) {
             setSelectedIndex(0)
             return
@@ -35,6 +36,7 @@ const Carousel = () => {
     }
 
     const onPrev = () => {
+        console.log(selectedIndex)
         if (selectedIndex === 0) {
             setSelectedIndex(data.length - 1)
             return
